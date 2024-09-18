@@ -27,13 +27,21 @@
 import React from 'react';
 import CommentaireForm from './components/CommentaireForm';
 import CommentaireList from './components/CommentairesList';
+import Top from './components/Top';
+import AlwaysOnTop from './components/AlwaysOnTop';
+import Lorem from './components/Lorem';
+
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Commentaires</h1>
-      <CommentaireForm />
-      <CommentaireList />
+      {/* <h1>App.jsx</h1> */}
+      <AlwaysOnTop />
+      <Top />
+      {/* <CommentaireForm />
+      <CommentaireList /> */}
+      <Lorem />
     </div>
   );
 }
