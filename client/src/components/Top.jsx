@@ -1,5 +1,4 @@
 import React from "react";
-import videoBg from "../assets/BlackHole.mp4";
 import triangleBg from "../assets/Triangle.mp4";
 
 const Top = () => {

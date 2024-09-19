@@ -30,6 +30,7 @@ import CommentaireList from './components/CommentairesList';
 import Top from './components/Top';
 import AlwaysOnTop from './components/AlwaysOnTop';
 import Lorem from './components/Lorem';
+import Banner from './components/Banner';
 
 import './App.css';
 
@@ -39,6 +40,7 @@ function App() {
       {/* <h1>App.jsx</h1> */}
       <AlwaysOnTop />
       <Top />
+      <Banner/>
       {/* <CommentaireForm />
       <CommentaireList /> */}
       <Lorem />
