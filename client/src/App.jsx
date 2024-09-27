@@ -33,17 +33,18 @@ import Lorem from './components/Lorem';
 import Banner from './components/Banner';
 
 import './App.css';
+import Projets from './components/Projets';
 
 function App() {
   return (
     <div className="App">
-      {/* <h1>App.jsx</h1> */}
-      <AlwaysOnTop />
-      <Top />
-      <Banner/>
+       < AlwaysOnTop />
+      < Top />
+      < Banner /> 
+      < Projets />
       {/* <CommentaireForm />
       <CommentaireList /> */}
-      <Lorem />
+      < Lorem />
     </div>
   );
 }

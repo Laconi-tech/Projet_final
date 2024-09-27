@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../assets/logo.png";
-import mail from "../assets/mail.png";
+import logo from "../assets/logo/logo.png";
+import mail from "../assets/logo/mail.png";
 
 const AlwaysOnTop = () => {
     function OpenContactMe() {

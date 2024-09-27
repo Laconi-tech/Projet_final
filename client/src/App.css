@@ -5,6 +5,7 @@
 
 body {
     background-color: #1E1E1E;
+    overflow-x: hidden;
 }
 
 #Lorem {
@@ -65,7 +66,7 @@ body {
 /* AlwaysOnTop ///////////////////////////////////////////////////////////////////////// */
 
 #AlwaysOnTop {
-    width: 100%;
+   /* width: 100%;  mis en commentaire mais il faut le réactivé bg */
     height: auto;
     position: fixed;
     z-index: 999;
@@ -119,10 +120,11 @@ body {
 
 .logos {
   overflow: hidden;
-  padding: 60px 0;
+  padding: 30px 0;
   background: white;
   white-space: nowrap;
   position: relative;
+  margin-bottom: 50px;
 }
 
 .logos:before,
@@ -157,4 +159,99 @@ body {
 .logos-slide img {
   height: 50px;
   margin: 0 40px;
+}
+
+/* Projets //////////////////////////////////////////////////////////////////// */
+
+#Projets {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0px;
+  gap: 35px;
+  color: white;
+}
+#Projets_Carroussel {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  #Projets_Carroussel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.Projet {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+.Projet_div {
+  background-color: #151515;
+  padding: 10px 0px 30px 0px;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.Projet_div:nth-child(1), .Projet_div:nth-child(3), .Projet_div:nth-child(5) {
+  /* margin-top: 40px; */
+  background-color: rgba(255, 255, 255, 0.356);
+  backdrop-filter: blur(10px);
+  animation: backgroundChange1 3s infinite alternate ease-in-out;
+}
+.Projet_div:nth-child(2), .Projet_div:nth-child(4), .Projet_div:nth-child(6) {
+  /* margin-top: 40px; */
+  background-color: rgba(183, 0, 255, 0.274);
+  backdrop-filter: blur(10px);
+  animation: backgroundChange2 3s infinite alternate ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .Projet_div:nth-child(2), .Projet_div:nth-child(3), .Projet_div:nth-child(6) {
+    /* margin-top: 40px; */
+    background-color: rgba(255, 255, 255, 0.356);
+    backdrop-filter: blur(10px);
+    animation: backgroundChange1 3s infinite alternate ease-in-out;
+  }
+  .Projet_div:nth-child(1), .Projet_div:nth-child(4), .Projet_div:nth-child(5) {
+    /* margin-top: 40px; */
+    background-color: rgba(183, 0, 255, 0.274);
+    backdrop-filter: blur(10px);
+    animation: backgroundChange2 3s infinite alternate ease-in-out;
+  }
+}
+.Projet_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centre le texte verticalement et horizontalement */
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  background-color: rgba(94, 94, 94, 0.5);
+  backdrop-filter: blur(10px);
+  font-weight: 700;
+}
+
+@keyframes backgroundChange1 {
+  0% {
+    background-color: rgba(255, 255, 255, 0.356); /* Couleur initiale */
+  }
+  100% {
+    background-color: rgba(183, 0, 255, 0.274); /* Couleur de transition */
+  }
+}
+
+@keyframes backgroundChange2 {
+  0% {
+    background-color: rgba(183, 0, 255, 0.274); /* Couleur de transition */
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.356); /* Couleur initiale */
+  }
 }

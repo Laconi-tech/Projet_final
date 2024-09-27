@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
-import c from "../assets/C.png";
-import css from "../assets/css.png";
-import docker from "../assets/docker.png";
-import html from "../assets/html.png";
-import js from "../assets/js.png";
-import php from "../assets/php.png";
-import python from "../assets/python.png";
-import react from "../assets/react.png";
-import mongodb from "../assets/mongodb.png";
-import shell from "../assets/shell.png";
-import linux from "../assets/linux.png";
+import c from "../assets/logo/C.png";
+import css from "../assets/logo/css.png";
+import docker from "../assets/logo/docker.png";
+import html from "../assets/logo/html.png";
+import js from "../assets/logo/js.png";
+import php from "../assets/logo/php.png";
+import python from "../assets/logo/python.png";
+import react from "../assets/logo/react.png";
+import mongodb from "../assets/logo/mongodb.png";
+import shell from "../assets/logo/shell.png";
+import linux from "../assets/logo/linux.png";
 
 
 const Banner = () => {
