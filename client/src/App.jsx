@@ -34,6 +34,7 @@ import Banner from './components/Banner';
 
 import './App.css';
 import Projets from './components/Projets';
+import LinkBanner from './components/LinkBanner';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
       < Top />
       < Banner /> 
       < Projets />
+      < LinkBanner />
       {/* <CommentaireForm />
       <CommentaireList /> */}
       < Lorem />
