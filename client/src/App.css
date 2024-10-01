@@ -8,6 +8,10 @@ body {
     overflow-x: hidden;
 }
 
+p {
+  color: #ffffff;
+}
+
 #Lorem {
     color: aliceblue;
 }
@@ -224,6 +228,10 @@ body {
     backdrop-filter: blur(10px);
     animation: backgroundChange2 3s infinite alternate ease-in-out;
   }
+
+  /* .Projet_div:nth-child(2) {
+    margin-top: 40px;
+  } */
 }
 .Projet_text {
   position: absolute;
@@ -293,4 +301,77 @@ body {
 #LinkBanner_a {
   /* visibility: hidden; */
   display: none;
+}
+
+/* Commentaire Form ///////////////////////////////////////////////////////////////////// */
+
+#CommentaireForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background-color: #151515;
+}
+#CommentaireForm_title {
+  color: #ffffff;
+}
+#CommentaireForm_form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  gap: 16px;
+  text-align: center;
+  margin: 20px 0px;
+  align-items: center;
+}
+#CommentaireForm_name {
+  text-align: center;
+  width: 50%;
+  max-width: 350px;
+}
+#CommentaireForm_text {
+  width: 80%;
+  min-height: 70px;
+  text-align: center;
+}
+#CommentaireForm_button {
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+/* CommentaireList ////////////////////////////////////////////////////////////////////////// */
+
+#CommentairesList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+  width: 100%;
+  border-radius: 50px;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  margin: 40px 0px;
+}
+#CommentairesList_refresh {
+  display: none;
+}
+
+.CommentairesList_Commentaires {
+  background-color: #1F1F1F;
+  width: 70%;
+  border-radius: 10px;
+}
+.CommentairesList_h2 {
+  background-color: #B8B8B8;
+  width: fit-content;
+  padding: 4px;
+  border-radius: 10px 0px 10px 0px;
+}
+.CommentairesList_p {
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px 30px 10px;
+  word-wrap: anywhere;
 }

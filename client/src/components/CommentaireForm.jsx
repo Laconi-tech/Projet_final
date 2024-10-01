@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 
+function refresh_commentaires() {
+  setTimeout(function(){ document.getElementById("CommentaireList_refresh").click(); }, 1000);
+}
+
 const CommentaireForm = () => {
   const [nom, setNom] = useState('');
   const [message, setMessage] = useState('');
@@ -20,7 +24,7 @@ const CommentaireForm = () => {
       });
 
       if (response.ok) {
-        setSuccess('Commentaire ajouté avec succès!');
+        // setSuccess('Commentaire ajouté avec succès!');
         setNom('');
         setMessage('');
       } else {
@@ -32,10 +36,11 @@ const CommentaireForm = () => {
   };
 
   return (
-    <div>
-      <h2>Laisser un commentaire</h2>
-      <form onSubmit={handleSubmit}>
+    <div id='CommentaireForm'>
+      <h1 id='CommentaireForm_title'>Commentaires :</h1>
+      <form onSubmit={handleSubmit} id='CommentaireForm_form'>
         <input
+        id='CommentaireForm_name'
           type="text"
           value={nom}
           onChange={(e) => setNom(e.target.value)}
@@ -43,12 +48,13 @@ const CommentaireForm = () => {
           required
         />
         <textarea
+          id='CommentaireForm_text'
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           placeholder="Votre message"
           required
         ></textarea>
-        <button type="submit">Envoyer</button>
+        <button id='CommentaireForm_button' type="submit" onClick={refresh_commentaires}>Envoyer</button>
       </form>
       {success && <p>{success}</p>}
     </div>
