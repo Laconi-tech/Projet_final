@@ -5,6 +5,4 @@
 /*.js
   Content-Type: application/javascript; charset=UTF-8
 
-# Appliquer aux fichiers .jsx
-/*.jsx
-  Content-Type: application/javascript; charset=UTF-8
+
