@@ -1,8 +1,0 @@
-# Appliquer le bon type MIME pour les fichiers JavaScript modules (ou JSX)
-# Ces fichiers doivent être considérés comme des modules par le navigateur.
-
-# Appliquer aux fichiers .js
-/*.js
-  Content-Type: application/javascript; charset=UTF-8
-
-
