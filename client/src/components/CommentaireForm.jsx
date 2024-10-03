@@ -15,7 +15,7 @@ const CommentaireForm = () => {
     const newCommentaire = { nom, message };
 
     try {
-      const response = await fetch('http://localhost:5050/commentaires', {
+      const response = await fetch('https://projet-final-p6qe.onrender.com/commentaires', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -32,7 +32,7 @@
 //   // This method fetches the commentaires from the database.
 //   useEffect(() => {
 //     async function getCommentaires() {
-//       const response = await fetch(`http://localhost:5050/commentaires`);
+//       const response = await fetch(`https://projet-final-p6qe.onrender.com/commentaires`);
 //       if (!response.ok) {
 //         const message = `An error occurred: ${response.statusText}`;
 //         console.error(message);
@@ -47,7 +47,7 @@
 
 //   // This method will delete a commentaire
 //   async function deleteCommentaire(id) {
-//     await fetch(`http://localhost:5050/commentaires/${id}`, {
+//     await fetch(`https://projet-final-p6qe.onrender.com/commentaires/${id}`, {
 //       method: "DELETE",
 //     });
 //     const newCommentaires = commentaires.filter((el) => el._id !== id);
@@ -112,7 +112,7 @@ export default function CommentaireList() {
 
   // Cette fonction récupère les commentaires depuis la base de données
   async function getCommentaires() {
-    const response = await fetch(`http://localhost:5050/commentaires`);
+    const response = await fetch(`https://projet-final-p6qe.onrender.com/commentaires`);
     if (!response.ok) {
       const message = `An error occurred: ${response.statusText}`;
       console.error(message);
@@ -129,7 +129,7 @@ export default function CommentaireList() {
 
   // Fonction de suppression d'un commentaire
   async function deleteCommentaire(id) {
-    await fetch(`http://localhost:5050/commentaires/${id}`, {
+    await fetch(`https://projet-final-p6qe.onrender.com/commentaires/${id}`, {
       method: "DELETE",
     });
     const newCommentaires = commentaires.filter((el) => el._id !== id);
