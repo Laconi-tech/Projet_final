@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function refresh_commentaires() {
-  setTimeout(function(){ document.getElementById("CommentaireList_refresh").click(); }, 1000);
+  setTimeout(function(){ document.getElementById("CommentairesList_refresh").click(); }, 1000);
 }
 
 const CommentaireForm = () => {
