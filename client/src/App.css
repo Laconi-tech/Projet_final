@@ -289,6 +289,10 @@ p {
   padding: 20px;
 }
 
+.LinkBanner_Img:hover {
+  cursor: pointer;
+}
+
 .LinkBanner_p {
   color: #ffffff;
   font-size: 30px;
@@ -378,27 +382,6 @@ p {
 
 /* Poppup //////////////////////////////////////////////////////////////// */
 
-/* #pseudoLeft($width, $height) {
-  content: '';
-  position: absolute;
-  width: $width;
-  height: $height;
-  top: 50%;
-  transform: translateY(-50%);
-  left: -4 - $width;
-} */
-
-/* #pseudoRight($width, $height) {
-  content: '';
-  position: absolute;
-  width: $width;
-  height: $height;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -4 - $width;
-} */
-
-
 #containerPopup {
   position: fixed;
   top: 50%;
@@ -443,7 +426,7 @@ p {
   transform: scale(1.1);
 }
 
-/* Form /////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Mail Form /////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 #contactForm {
   display: flex;
