@@ -9,6 +9,7 @@ import Banner from './components/Banner';
 import './App.css';
 import Projets from './components/Projets';
 import LinkBanner from './components/LinkBanner';
+import Popup from './components/Popup';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <CommentaireForm />
       <CommentaireList />
       {/* < Lorem /> */}
+      {/* < Popup /> */}
     </div>
   );
 }

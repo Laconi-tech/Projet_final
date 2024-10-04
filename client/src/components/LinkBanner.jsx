@@ -9,7 +9,7 @@ const LinkBanner = () => {
     }
 
     function OpenLinkdin() {
-        window.open("https://github.com/Laconi-tech");
+        window.open("https://www.linkedin.com/in/nicolas-gomis-dev/");
     }
 
     function OpenCv() {

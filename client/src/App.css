@@ -375,3 +375,93 @@ p {
   padding: 10px 10px 30px 10px;
   word-wrap: anywhere;
 }
+
+/* Poppup //////////////////////////////////////////////////////////////// */
+
+/* #pseudoLeft($width, $height) {
+  content: '';
+  position: absolute;
+  width: $width;
+  height: $height;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -4 - $width;
+} */
+
+/* #pseudoRight($width, $height) {
+  content: '';
+  position: absolute;
+  width: $width;
+  height: $height;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -4 - $width;
+} */
+
+
+#containerPopup {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 10, 10, 0.3);
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.2s;
+  z-index: 90000000;
+}
+
+#contentPopup {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  background-color: white;
+  text-align: center;
+  max-width: 100%;
+  width: 90%;
+  height: 60%;
+  padding: 2em 3em;
+  border: 1px solid #f6f6f6;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+#closePopup {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  z-index: 10;
+  transition: transform 0.15s ease-in;
+}
+#closePopup:hover {
+  transform: scale(1.1);
+}
+
+/* Form /////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#contactForm_name {
+  width: 100%;
+  max-width: 600px;
+}
+#contactForm_email {
+  width: 100%;
+  max-width: 600px;
+}
+#contactForm_message {
+  width: 100%;
+  max-width: 1250px;
+}
