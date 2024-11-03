@@ -119,7 +119,12 @@ export default function CommentaireList() {
       return;
     }
     const commentaires = await response.json();
-    setCommentaires(commentaires);
+    
+    // Trier les commentaires du plus récent au plus ancien par date
+    const sortedCommentaires = commentaires.sort((a, b) => new Date(b.date) - new Date(a.date));
+    setCommentaires(sortedCommentaires);
+
+    // setCommentaires(commentaires);
   }
 
   // Utilisation de useEffect pour charger les commentaires au montage du composant
